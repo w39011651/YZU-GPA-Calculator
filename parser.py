@@ -47,4 +47,6 @@ def run():
 if __name__ == '__main__':
     soup = get_soup_from_html_text()
     table_tags = get_table_information(soup)
-    get_course_and_score(table_tags)
+    d = get_course_and_score(table_tags)
+    for k,v in d.items():
+        print(f"{k} {v}")
