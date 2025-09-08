@@ -21,7 +21,7 @@ def split_information_from_line(text:str):
     """
     parts = text.split()
     if parts[-1].isdigit() and parts[-2].isdigit():
-        course_name = parts[5] # 第6個元素為課程名稱 第7個是英文名稱
+        course_name = ''.join(parts[5:-3]) # 第6個元素為課程名稱 第7個是英文名稱
         credit = parts[-2] # 倒數第2個元素為學分
         score = parts[-1] # 倒數第1個元素為分數
         #print(f"學分: {credit}, 分數: {score}, 課程名稱: {course_name}")
