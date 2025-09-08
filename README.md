@@ -38,9 +38,13 @@ git clone "https://github.com/w39011651/YZU-GPA-Calculator.git"
 
 ![alt text](image-1.png)
 
+```
+注: 學校英文成績單GPA採用4分制，更改成4分制後我的GPA是3.89，而程式估算的結果為3.886
+```
 
 ## 環境
 
 Python需要以下套件才可執行:
 + bs4
 + lxml
++ csv
